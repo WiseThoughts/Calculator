@@ -22,6 +22,7 @@ body{
     background: linear-gradient(180deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
     width: 500px;
     height: 600px;
+    padding: 10px;
 }
 
 h1{
@@ -50,10 +51,10 @@ button:hover{
     width: 100%;
     font-size: 60px;
     height: 100px;
-    border: none;
-    border-radius: 0;
-    background-color: #22c1c3;
-    color: #fff;
+    border: 2px solid rgba(253,187,45,1);
+    border-radius: 5px;
+    background-color: rgba(34,193,195,1);
+    color: black;
     text-align: right;
     padding-right: 20px;
     padding-left: 10px;

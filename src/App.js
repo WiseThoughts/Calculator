@@ -10,7 +10,7 @@ function App() {
 
   const calculate=(button) =>{
     if (button === "="){
-      const result= evaluate(input)
+      const result = evaluate(input)
       setInput(result)
     } else if (button==="c"){
       setInput("")
@@ -19,15 +19,15 @@ function App() {
     };
   };
 
-  const handleClick= (e)=>{
-    const display=e.target.textContent 
+  const handleClick= (e) => {
+    const display = e.target.textContent 
     calculate(display)
   }
 
   return (
     <div className="box">
       <h1>calculator</h1>
-      <h2 class="result" data-testid="display">{input}</h2>
+      <h2 class="result" data-testid="display">{input || "0"}</h2>
       <div class="buttonBox">
       <Operators class="op" handleClick={handleClick} />
       <Numbers class="num" handleClick={handleClick} />
