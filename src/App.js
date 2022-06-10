@@ -25,10 +25,13 @@ function App() {
   }
 
   return (
-    <div class="box">
-      <h1 class="result">{input}</h1>
-      <Operators handleClick={handleClick} />
-      <Numbers handleClick={handleClick} />
+    <div className="box">
+      <h1>calculator</h1>
+      <h2 class="result" data-testid="display">{input}</h2>
+      <div class="buttonBox">
+      <Operators class="op" handleClick={handleClick} />
+      <Numbers class="num" handleClick={handleClick} />
+      </div>
     </div>
   );
 }

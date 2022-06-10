@@ -3,15 +3,11 @@ const Operators = ({handleClick}) => {
 const operatorButtons=["+","-","*","/","="]
 
     return ( 
-        <div class="key">
+        <div class="keyO">
         {operatorButtons.map((button)=>(
             <button onClick={handleClick} key={button}>{button}</button>
         ))}
         </div>
-
-
-
-
     );
 }
 
