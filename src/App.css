@@ -9,6 +9,7 @@ body{
     position:relative;
     font-family: 'Fira Sans',sans-serif;
     background-repeat: no-repeat;
+    height: 100vh;
 }
 
 .box{
